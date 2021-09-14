@@ -41,10 +41,10 @@ secure:
       - /webjars/springfox-swagger-ui/**
       - /actuator/**
       - /druid/**
-      - /admin/login
-      - /admin/register
-      - /admin/info
-      - /admin/logout
+      - /api/admin/login
+      - /api/admin/register
+      - /api/admin/info
+      - /api/admin/logout
       - /minio/upload
 
 aliyun:
@@ -65,3 +65,6 @@ minio:
   bucketName: mall #存储桶名称
   accessKey: minioadmin #访问的key
   secretKey: minioadmin #访问的秘钥
+server:
+  servlet:
+    context-path: /api
